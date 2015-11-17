@@ -26,3 +26,5 @@ git push origin master
 git clone克隆
 git checkout -b dev创建dev分支并切换到该分支
 git branch查看当前分支
+git merge命令用于合并指定分支到当前分支
+git branch -d dev删除dev分支
