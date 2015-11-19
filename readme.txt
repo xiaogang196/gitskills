@@ -1,6 +1,7 @@
 this is a test.
 Git is a distributed version control system.
 Git is free software.
+123
 
 mkdir 创建一个文件夹
 pwd 显示当前目录
@@ -26,5 +27,11 @@ git push origin master
 git clone克隆
 git checkout -b dev创建dev分支并切换到该分支
 git branch查看当前分支
-git merge命令用于合并指定分支到当前分支
-git branch -d dev删除dev分支
+git tag <name>打一个新标签
+git tag查看所有标签
+git tag -a <tagname> -m "blablabla..."可以指定标签信息
+git tag -s <tagname> -m "blablabla..."可以用PGP签名标签
+git push origin <tagname>推送某个标签到远程
+git push origin --tags可以推送全部未推送过的本地标签
+git tag -d <tagname>可以删除一个本地标签
+git push origin :refs/tags/<tagname>可以删除一个远程标签
